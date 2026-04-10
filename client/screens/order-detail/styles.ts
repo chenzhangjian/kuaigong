@@ -1,0 +1,215 @@
+import { StyleSheet } from 'react-native';
+import { Spacing, BorderRadius, Theme } from '@/constants/theme';
+
+export const createStyles = (theme: Theme) => {
+  return StyleSheet.create({
+    container: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    scrollContent: {
+      paddingHorizontal: Spacing["2xl"],
+      paddingTop: Spacing["2xl"],
+      paddingBottom: Spacing["6xl"],
+    },
+    header: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-between',
+      marginBottom: Spacing["2xl"],
+    },
+    headerTitle: {
+      fontSize: 20,
+      fontWeight: '700',
+      color: theme.textPrimary,
+    },
+    statusCard: {
+      backgroundColor: theme.primary,
+      borderRadius: BorderRadius["2xl"],
+      padding: Spacing.xl,
+      alignItems: 'center',
+      marginBottom: Spacing.xl,
+    },
+    statusText: {
+      fontSize: 18,
+      fontWeight: '700',
+      color: '#FFFFFF',
+    },
+    taskInfo: {
+      marginBottom: Spacing.xl,
+    },
+    title: {
+      fontSize: 24,
+      fontWeight: '800',
+      color: theme.textPrimary,
+      marginBottom: Spacing.sm,
+    },
+    budget: {
+      fontSize: 32,
+      fontWeight: '800',
+      color: theme.primary,
+    },
+    detailItem: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      marginBottom: Spacing.md,
+    },
+    detailText: {
+      fontSize: 15,
+      color: theme.textSecondary,
+      marginLeft: Spacing.md,
+    },
+    actionButton: {
+      backgroundColor: theme.primary,
+      borderRadius: BorderRadius["2xl"],
+      paddingVertical: Spacing.xl,
+      alignItems: 'center',
+      marginTop: Spacing.xl,
+    },
+    actionButtonText: {
+      fontSize: 18,
+      fontWeight: '700',
+      color: '#FFFFFF',
+    },
+    locationStatusCard: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      backgroundColor: theme.backgroundElevated,
+      borderRadius: BorderRadius.lg,
+      padding: Spacing.lg,
+      marginTop: Spacing.lg,
+      gap: Spacing.sm,
+    },
+    locationStatusText: {
+      fontSize: 14,
+      color: theme.textSecondary,
+    },
+    counterpartyCard: {
+      backgroundColor: theme.backgroundDefault,
+      borderRadius: BorderRadius['2xl'],
+      padding: Spacing.xl,
+      marginTop: Spacing.xl,
+    },
+    counterpartyLabel: {
+      fontSize: 14,
+      fontWeight: '600',
+      color: theme.textSecondary,
+      marginBottom: Spacing.lg,
+    },
+    counterpartyInfo: {
+      flexDirection: 'row',
+      alignItems: 'center',
+    },
+    counterpartyAvatar: {
+      width: 48,
+      height: 48,
+      borderRadius: 24,
+      backgroundColor: `${theme.primary}15`,
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    counterpartyDetails: {
+      marginLeft: Spacing.lg,
+      flex: 1,
+    },
+    counterpartyName: {
+      fontSize: 16,
+      fontWeight: '700',
+      color: theme.textPrimary,
+    },
+    counterpartyPhone: {
+      fontSize: 14,
+      color: theme.textSecondary,
+      marginTop: Spacing.xs,
+    },
+    cancelButton: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'center',
+      gap: Spacing.sm,
+      backgroundColor: `${theme.error}10`,
+      borderRadius: BorderRadius.xl,
+      paddingVertical: Spacing.lg,
+      marginTop: Spacing.lg,
+    },
+    cancelButtonText: {
+      fontSize: 15,
+      fontWeight: '600',
+      color: theme.error,
+    },
+    reviewButton: {
+      backgroundColor: '#F39C12',
+      borderRadius: BorderRadius['2xl'],
+      paddingVertical: Spacing.xl,
+      alignItems: 'center',
+      marginTop: Spacing.xl,
+      flexDirection: 'row',
+      justifyContent: 'center',
+      gap: Spacing.md,
+    },
+    modalOverlay: {
+      flex: 1,
+      backgroundColor: 'rgba(0,0,0,0.5)',
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    modalContent: {
+      backgroundColor: theme.backgroundDefault,
+      borderRadius: BorderRadius['2xl'],
+      padding: Spacing['2xl'],
+      width: '85%',
+      maxWidth: 400,
+    },
+    modalTitle: {
+      fontSize: 18,
+      fontWeight: '700',
+      color: theme.textPrimary,
+      textAlign: 'center',
+      marginBottom: Spacing.md,
+    },
+    modalHint: {
+      fontSize: 14,
+      color: theme.textSecondary,
+      textAlign: 'center',
+      marginBottom: Spacing.xl,
+    },
+    modalInput: {
+      backgroundColor: theme.backgroundElevated,
+      borderRadius: BorderRadius.xl,
+      padding: Spacing.lg,
+      fontSize: 15,
+      color: theme.textPrimary,
+      minHeight: 80,
+      marginBottom: Spacing.xl,
+    },
+    modalButtons: {
+      flexDirection: 'row',
+      gap: Spacing.md,
+    },
+    modalCancelButton: {
+      flex: 1,
+      backgroundColor: theme.backgroundElevated,
+      borderRadius: BorderRadius.xl,
+      paddingVertical: Spacing.lg,
+      alignItems: 'center',
+    },
+    modalCancelText: {
+      fontSize: 15,
+      fontWeight: '600',
+      color: theme.textSecondary,
+    },
+    modalConfirmButton: {
+      flex: 1,
+      backgroundColor: theme.error,
+      borderRadius: BorderRadius.xl,
+      paddingVertical: Spacing.lg,
+      alignItems: 'center',
+    },
+    modalConfirmText: {
+      fontSize: 15,
+      fontWeight: '600',
+      color: '#FFFFFF',
+    },
+  });
+};
