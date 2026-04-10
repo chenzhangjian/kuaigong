@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "e9000a78-fdce-4849-bc3d-180209eb4e99"
+      }
+    },
+    "android": {
+      "package": "com.kuaigong.app"
+    }
+  }
+}
